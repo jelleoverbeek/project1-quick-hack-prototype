@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amsterdam street growth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css">
+    <script src="node_modules/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+
+<aside>
+    <div class="timeline"></div>
+    <div class="scroll-indicator">
+        <img src="assets/img/scroll.svg" alt="Scroll naar beneden voor meer straten">
+        Scroll naar beneden om meer straten te laden
+    </div>
+</aside>
+
+<main id="map"></main>
+
+<div class="controls">
+    <button id="play">
+        <img src="assets/img/play.svg" alt="Play button">
+    </button>
+    <button id="pause" class="hidden"><img src="assets/img/pause.svg" alt="pause button"></button>
+</div>
+
+<div class="preloader">
+    <img src="assets/img/loader.svg" alt="Loading...">
+</div>
+
+<div class="landscape-only">
+    <img src="assets/img/rotate-phone.svg">
+    Please rotate your phone
+</div>
+
+<!-- Scripts -->
+<script src="node_modules/terraformer/terraformer.js" type="text/javascript"></script>
+<script src="node_modules/terraformer-wkt-parser/terraformer-wkt-parser.js" type="text/javascript"></script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
